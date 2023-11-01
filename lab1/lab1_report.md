@@ -4,8 +4,8 @@ University: [ITMO University](https://itmo.ru/ru/)
 Faculty: [FICT](https://fict.itmo.ru)
 Course: [Introduction to distributed technologies](https://github.com/itmo-ict-faculty/introduction-to-distributed-technologies)
 Year: 2023/2024
-Group: K66666
-Author: Filianin Ivan Victorovich
+Group: K4111c
+Author: Antsiferova Tatiana Anatolievna
 Lab: Lab1
 Date of create: 01.11.2023
 Date of finished: 
