@@ -105,4 +105,4 @@ minikube kubectl port-forward service/app 3000:3000
 
 #### Схема организации контейеров и сервисов
 
-![diagrama](diagrama.png)
+![diagrama_1](diagrama_1.png)
