@@ -38,6 +38,21 @@ Date of finished:
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 ```
 #### Запуск пода
-Для запуска пода был создан манифест 
-
+Для запуска пода был создан манифест vault-pod.yaml`:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vault
+  labels:
+     name: vault
+spec:
+  containers:
+    - name: vault
+      image: vault:1.13.3
+```
+Далее с помощью следующей команды запускаем под:
+```bash
+minikube kubectl -- apply -f vault-pod.yaml
+```
 
