@@ -17,7 +17,7 @@ Date of finished:
 ### Цель работы
 Ознакомиться с Docker и Minikube, создать манифест для запуска пода, запустить и протестировать под. 
 ### Ход работы
-Установлен  Docker Desktop. Настроен WSL, в котором был установлен Minikube на рабочий компьютер.
+Установлен  Docker Desktop и Minikube на рабочий компьютер.
 #### Запуск minikube cluster
 
 ```
@@ -37,3 +37,7 @@ Date of finished:
 🌟  Enabled addons: storage-provisioner, default-storageclass
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 ```
+#### Запуск пода
+Для запуска пода был создан манифест 
+
+
