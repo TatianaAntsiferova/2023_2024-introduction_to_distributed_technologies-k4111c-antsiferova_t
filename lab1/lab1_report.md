@@ -67,6 +67,7 @@ minikube kubectl -- port-forward service/vault 8200:8200
 ![port-forward](port-forward.png)
 
 После того, как minikube прокинул порт компьютера в контейнер, можно перейnи в vault по ссылке http://localhost:8200
+
 ![web-vault](web-vault.png)
 
 #### Токен для входа в vault 
