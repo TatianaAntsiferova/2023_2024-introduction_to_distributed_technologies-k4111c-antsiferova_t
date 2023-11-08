@@ -64,6 +64,7 @@ minikube kubectl -- expose pod vault --type=NodePort --port=8200
 ```bash
 minikube kubectl -- port-forward service/vault 8200:8200
 ```
+![port-forward](images/port-forward.png)
 
 После того, как minikube прокинул порт компьютера в контейнер, можно перейли в   vault по ссылке http://localhost:8200
 
