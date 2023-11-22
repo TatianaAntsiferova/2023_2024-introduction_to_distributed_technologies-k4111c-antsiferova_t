@@ -80,12 +80,16 @@ spec:
     app: frontend
   type: NodePort
   ports:
-    - port: 3000
+    - port: 443
       protocol: TCP
       name: http
       targetPort: 3000
 ```
 #### Создание Ingress
+Сгенеририруем TLS сертификат
+![](/lab3/images/image1.png)
+![](/lab3/images/image2.png)
+
 Включяем `minikube addons enable ingress`:
 
 ```bash
@@ -98,5 +102,43 @@ You can view the list of minikube maintainers at: https://github.com/kubernetes/
 🔎  Verifying ingress addon...
 🌟  The 'ingress' addon is enabled
 ```
-Сгенерируем TLS сертификат и импортируем его в minikube, добавив также в Ingress:
-```bash
+Создадим и применим Ingress :
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-frontend
+spec:
+  rules:
+  - host: lab3antsiferova.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: service-frontend
+            port:
+              number: 443
+  tls:
+  - hosts:
+    - lab3antsiferova.com
+    secretName: tls-secret
+```
+Применяем :
+![](/lab3/images/image3.png)
+
+Чтобы перейти в сервис, нужно вписать в hosts IP и наше доменное имя (FQDN) 
+```
+sudo nano /etc/hosts
+
+```
+![](/lab3/images/image4.png)
+Перенаправляем трафик командой: 
+```
+minikube tunnel
+
+```
+Переходим в сервис по доменному имени и проверяем сертификат:
+
+
