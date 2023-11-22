@@ -139,5 +139,6 @@ minikube tunnel
 ```
 Переходим в сервис по доменному имени :
 https://lab3antsiferova.com
+
 ![](/lab3/images/image5.png)
 
