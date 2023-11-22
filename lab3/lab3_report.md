@@ -129,16 +129,15 @@ spec:
 ![](/lab3/images/image3.png)
 
 Чтобы перейти в сервис, нужно вписать в hosts IP и наше доменное имя (FQDN) 
-```
+```bash
 sudo nano /etc/hosts
-
 ```
 ![](/lab3/images/image4.png)
 Перенаправляем трафик командой: 
-```
+```bash
 minikube tunnel
-
 ```
-Переходим в сервис по доменному имени и проверяем сертификат:
-
+Переходим в сервис по доменному имени :
+https://lab3antsiferova.com
+![](/lab3/images/image5.png)
 
