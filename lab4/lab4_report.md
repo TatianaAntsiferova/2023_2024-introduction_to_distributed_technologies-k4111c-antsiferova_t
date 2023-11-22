@@ -22,7 +22,8 @@ Date of finished:
 minikube start --network-plugin=cni --cni=calico --nodes 2 -p multinode-demo
 ```
 ```bash
-😄  [multinode-demo] minikube v1.31.2 on Ubuntu 22.04 
+
+😄  [multinode-demo] minikube v1.31.2 на Ubuntu 22.04
 ✨  Using the docker driver based on existing profile
 ❗  With --network-plugin=cni, you will need to provide your own CNI. See --cni flag as a user-friendly alternative
 📌  Using Docker driver with root privileges
@@ -49,6 +50,7 @@ Docker Engine installation instructions: https://docs.docker.com/engine/install/
     ▪ env NO_PROXY=192.168.58.2
 🔎  Verifying Kubernetes components...
 🏄  Done! kubectl is now configured to use "multinode-demo" cluster and "default" namespace by default
+
 ```
 Проверим ноды:
 ```
