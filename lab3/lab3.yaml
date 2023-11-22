@@ -1,0 +1,49 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config
+data:
+  REACT_APP_USERNAME: "Antsiferova"
+  REACT_APP_COMPANY_NAME: "ITMO"
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy-frontend
+  labels:
+    app: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        envFrom:
+          - configMapRef:
+              name: config
+        ports:
+          - containerPort: 3000
+          
+---
+          
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-frontend
+spec:
+  selector:
+    app: frontend
+  ports:
+    - port: 443
+      protocol: TCP
+      targetPort: 3000
+
