@@ -171,4 +171,4 @@ kubectl exec -ti l4-deployment-76f8cfb86d-h9wzr -- sh
 ![](/lab4/images/image11.png)
 
 #### Схема
-![](/lab4/images/image12.png)
+![](/lab4/images/images12.png)
