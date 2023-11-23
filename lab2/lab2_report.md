@@ -8,7 +8,7 @@ Group: K4111c
 Author: Antsiferova Tatiana Anatolievna
 Lab: Lab2
 Date of create: 08.11.2023
-Date of finished: 
+Date of finished:09.11.2023
 
 ## Лабораторная работа №2 "Развертывание веб сервиса в Minikube, доступ к веб интерфейсу сервиса. Мониторинг сервиса."
 ### Описание работы
