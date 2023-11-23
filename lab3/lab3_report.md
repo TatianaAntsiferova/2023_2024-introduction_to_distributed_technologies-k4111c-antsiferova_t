@@ -142,3 +142,6 @@ https://lab3antsiferova.com
 
 ![](/lab3/images/image5.png)
 
+#### Схема
+![](/lab3/images/image6.png)
+
