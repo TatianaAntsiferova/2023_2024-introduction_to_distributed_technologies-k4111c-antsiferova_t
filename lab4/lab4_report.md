@@ -27,7 +27,7 @@ minikube start --network-plugin=cni --cni=calico --nodes 2 -p multinode-demo
 ✨  Using the docker driver based on existing profile
 ❗  With --network-plugin=cni, you will need to provide your own CNI. See --cni flag as a user-friendly alternative
 📌  Using Docker driver with root privileges
-❗  For an improved experience it's recommended to use Docker Engine instead of Docker Desktop.
+❗  For an improved experience its recommended to use Docker Engine instead of Docker Desktop.
 Docker Engine installation instructions: https://docs.docker.com/engine/install/#server
 👍  Starting control plane node multinode-demo in cluster multinode-demo
 🚜  Pulling base image ...
